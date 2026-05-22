@@ -8,8 +8,7 @@ export const config = {
   ],
 };
 
-// ?? UPDATED FOR NEXT.JS 16: The function must be named "proxy"
-export function proxy(req: NextRequest) {
+export function middleware(req: NextRequest) {
   const url = req.nextUrl.clone();
   const hostname = req.headers.get('host') || '';
 
@@ -17,13 +16,15 @@ export function proxy(req: NextRequest) {
   const cleanHostname = hostname.split(':')[0]; 
   const subdomain = cleanHostname.split('.')[0];
 
-  // If there is no subdomain, or it's "www", show the main homepage
-  const isRootDomain = cleanHostname === 'mygsoc.xyz' || cleanHostname === 'localhost';
+  // SAFETY CHECK: Ignore Vercel's default domains, localhost, and your root domain
+  const isRootDomain = cleanHostname === 'mygsoc.xyz' || cleanHostname === 'localhost' || cleanHostname.endsWith('.vercel.app');
+  
+  // If there is no subdomain, it's "www", or it's a root/Vercel domain, load the main homepage normally
   if (!subdomain || subdomain === 'www' || isRootDomain) {
     return NextResponse.next();
   }
 
-  // REWRITE LOGIC: Route directly to the /[username] folder
+  // REWRITE LOGIC: Route directly to the /[username] folder inside the public directory
   url.pathname = `/${subdomain}${url.pathname === '/' ? '/index.html' : url.pathname}`;
   
   return NextResponse.rewrite(url);
