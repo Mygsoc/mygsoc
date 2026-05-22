@@ -10,7 +10,7 @@ export default function Home() {
           MyGSoC<span className="text-[#2ea44f]">.xyz</span>
         </div>
         <a 
-          href="https://github.com/YOUR_GITHUB_USERNAME/mygsoc-platform" 
+          href="https://https://github.com/Mygsoc/mygsoc" 
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-200 transition"
@@ -32,7 +32,7 @@ export default function Home() {
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <a 
-            href="https://github.com/YOUR_GITHUB_USERNAME/mygsoc-platform#readme" 
+            href="https://github.com/Mygsoc/mygsoc#readme" 
             className="bg-[#2ea44f] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#2c974b] transition transform hover:scale-105 shadow-lg shadow-green-900/20"
           >
             Claim Your Subdomain
