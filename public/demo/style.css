@@ -1,0 +1,212 @@
+/* Base Variables */
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --border-color: #30363d;
+    --accent: #2ea44f;
+    --accent-hover: #2c974b;
+    --status-merged: #8250df;
+    --status-open: #238636;
+    --status-draft: #768390;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+.portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile Header */
+.profile {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.profile h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.social-links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Cards & Layout */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Tech Stack Badges */
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.badge {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Timeline */
+.timeline {
+    list-style: none;
+    border-left: 2px solid var(--border-color);
+    margin-left: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.9rem;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+}
+
+.timeline-item.completed::before { background-color: var(--accent); }
+.timeline-item.active::before { background-color: #58a6ff; }
+
+.timeline-item .date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-item strong {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/* Pull Requests */
+.pr-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pr-item a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pr-item a:hover {
+    text-decoration: underline;
+}
+
+.status {
+    padding: 0.1rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    min-width: 65px;
+    text-align: center;
+}
+
+.status.merged { background-color: var(--status-merged); }
+.status.open { background-color: var(--status-open); }
+.status.draft { background-color: var(--status-draft); }
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
