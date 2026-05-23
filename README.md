@@ -1,6 +1,6 @@
 <div align="center">
 
-# ?? MyGSoC.xyz
+# 🚀 MyGSoC.xyz
 
 **The Open Source Portfolio Platform for GSoC Aspirants**
 
@@ -8,23 +8,23 @@
 [![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?style=flat-square)](#)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](#)
 
-[Website](https://mygsoc.xyz) � [View Live Demo](http://demo.mygsoc.xyz) � [Report an Issue](#)
+[Website](https://mygsoc.xyz) • [View Live Demo](http://demo.localhost:3000) • [Report an Issue](#)
 
 </div>
 
 ---
 
-## ?? What is this?
+## 📖 What is this?
 
 **MyGSoC** is a free, open-source platform designed to help Google Summer of Code (GSoC) aspirants build, host, and showcase their open-source journey. 
 
-By contributing to this repository, you aren't just building a portfolio�you are practicing the exact Git and GitHub workflow (Fork, Clone, Commit, PR) required to be a successful GSoC contributor.
+By contributing to this repository, you aren't just building a portfolio—you are practicing the exact Git and GitHub workflow (Fork, Clone, Commit, PR) required to be a successful GSoC contributor.
 
 Once your Pull Request is merged, our automated edge-routing instantly creates your portfolio at **`your-username.mygsoc.xyz`**.
 
 ---
 
-## ? Features
+## ✨ Features
 
 * **Zero Backend Required:** Write plain HTML, CSS, and vanilla JS.
 * **Instant Hosting:** Merged PRs are instantly deployed via Vercel.
@@ -33,7 +33,7 @@ Once your Pull Request is merged, our automated edge-routing instantly creates y
 
 ---
 
-## ??? How to Get Your Subdomain (Contribution Guide)
+## 🛠️ How to Get Your Subdomain (Contribution Guide)
 
 Getting your portfolio live takes less than 10 minutes. Follow these exact steps:
 
@@ -55,16 +55,16 @@ Getting your portfolio live takes less than 10 minutes. Follow these exact steps
 
 ### Step 4: Commit & Push
 
-        git add public/yorname/
-        git commit -m "Add portfolio for [yourname]"
+        git add public/your-username/
+        git commit -m "Add portfolio for [your-username]"
         git push origin main
 
 ### Step 5: Open a Pull Request
-Come back to this original repository and click **Compare & pull request**. Once our maintainers review and merge your code, your site will be live at `yourname.mygsoc.xyz` within seconds!
+Come back to this original repository and click **Compare & pull request**. Once our maintainers review and merge your code, your site will be live at `your-username.mygsoc.xyz` within seconds!
 
 ---
 
-## ?? Local Development (For Maintainers or Testing)
+## 💻 Local Development (For Maintainers or Testing)
 
 Want to test how your page looks with the wildcard subdomain routing before making a PR? 
 
@@ -77,21 +77,21 @@ Want to test how your page looks with the wildcard subdomain routing before maki
         npm run dev
 
 3. Test your personal route in your browser!
-   ?? `http://yourname.localhost:3000`
+   👉 `http://your-username.localhost:3000`
 
 ---
 
-## ?? Repository Rules
+## ⚠️ Repository Rules
 
 To keep this platform safe and functional for everyone, please adhere to the following rules:
 
-1. **Only touch your folder:** Do not modify `proxy.ts`, `app/page.tsx`, or any files outside of `public/yourname/`. PRs modifying core architecture will be automatically rejected.
+1. **Only touch your folder:** Do not modify `proxy.ts`, `app/page.tsx`, or any files outside of `public/your-username/`. PRs modifying core architecture will be automatically rejected.
 2. **No malicious code:** All PRs are manually reviewed. Do not include external tracking scripts, crypto miners, or malicious payloads.
 3. **Keep it relevant:** This is a professional platform for open-source portfolios. Keep the content focused on your projects, tech stack, and GSoC goals.
 
 ---
 
-## ?? Community & Mentorship
+## 🤝 Community & Mentorship
 
 Building open source is better together! If you are stuck on Git, need help centering a `div`, or want someone to review your GSoC proposal, open an issue labeled `help-wanted` and the community will step in.
 

@@ -1,0 +1,24 @@
+name: Prevent Core File Edits
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-paths:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify modified paths
+        run: |
+          CHANGED_FILES=$(git diff --name-only origin/main HEAD)
+          for file in $CHANGED_FILES; do
+            if [[ ! $file == public/contributors/* ]]; then
+              echo "PR Rejected: You can only add files inside public/contributors/your-username/"
+              exit 1
+            fi
+          done
