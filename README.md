@@ -1,7 +1,12 @@
-
-![MyGSoC Website Preview](images/screenshort.png)
+<div align="center">
+  <a href="https://www.mygsoc.xyz">
+    <img src="images/screenshort.png">
+  </a>
+</div>
 
 <div align="center">
+
+---
 **The Open Source Portfolio Platform for GSoC Aspirants**
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
