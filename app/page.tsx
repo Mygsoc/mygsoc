@@ -54,7 +54,7 @@ export default function Home() {
             <div className="text-[#2ea44f] text-4xl font-black mb-4">01.</div>
             <h3 className="text-2xl font-bold mb-3">Fork & Create</h3>
             <p className="text-gray-400 leading-relaxed">
-              Fork our repository on GitHub. Create a new folder inside the <code>/public</code> directory named exactly after your GitHub username.
+              Fork our repository on GitHub. Create a new folder inside the <code>/public</code> Create a directory named exactly after the subdomain you want.
             </p>
           </div>
 
