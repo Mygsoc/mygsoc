@@ -2,6 +2,8 @@
 
 # 🚀 MyGSoC.xyz
 
+
+
 **The Open Source Portfolio Platform for GSoC Aspirants**
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -41,8 +43,8 @@ Getting your portfolio live takes less than 10 minutes. Follow these exact steps
 1. Click the **Fork** button at the top right of this repository.
 2. Clone your forked repository to your local machine:
 
-        git clone https://github.com/YOUR-USERNAME/mygsoc-platform.git
-        cd mygsoc-platform
+        git clone https://github.com/Mygsoc/mygsoc.git
+        cd mygsoc
 
 ### Step 2: Create Your Folder
 1. Navigate to the `public/` directory.
