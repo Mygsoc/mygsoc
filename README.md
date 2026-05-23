@@ -1,9 +1,7 @@
+
+![MyGSoC Website Preview](images/screenshort.png)
+
 <div align="center">
-
-# 🚀 MyGSoC.xyz
-
-
-
 **The Open Source Portfolio Platform for GSoC Aspirants**
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
