@@ -52,19 +52,22 @@ Getting your portfolio live takes less than 10 minutes. Follow these exact steps
 
 ### Step 2: Create Your Folder
 1. Navigate to the `public/` directory.
-2. Create a new folder named **exactly** after your GitHub username (e.g., `public/octocat/`).
+
+2. Create a directory named exactly after the subdomain you want (e.g., if you want rahul.mygsoc.xyz, name your folder rahul)..
 
 ### Step 3: Build Your Page
-1. Add your `index.html`, `style.css`, and any images to your new folder. 
+1. Add your `index.html`, `style.css`, and any images to your new folder.
+
 2. **Need a head start?** Copy the files from the `public/demo/` folder into your new folder and customize the text and colors!
+
 3. *Important:* Always use relative links in your HTML. (Use `<link href="./style.css">`, NOT `<link href="/style.css">`).
 
 ### Step 4: Commit & Push
 
         git add public/yourname/
 
-        git commit -m "Add portfolio for [yourname]"
-        
+        git commit -m "Add portfolio for     [yourname]"
+
         git push origin main
 
 ### Step 5: Open a Pull Request
