@@ -97,7 +97,9 @@ Want to test how your page looks with the wildcard subdomain routing before maki
 To keep this platform safe and functional for everyone, please adhere to the following rules:
 
 1. **Only touch your folder:** Do not modify `proxy.ts`, `app/page.tsx`, or any files outside of `public/yourname/`. PRs modifying core architecture will be automatically rejected.
+
 2. **No malicious code:** All PRs are manually reviewed. Do not include external tracking scripts, crypto miners, or malicious payloads.
+
 3. **Keep it relevant:** This is a professional platform for open-source portfolios. Keep the content focused on your projects, tech stack, and GSoC goals.
 
 ---
