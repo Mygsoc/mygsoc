@@ -25,7 +25,7 @@
 
 By contributing to this repository, you aren't just building a portfolio—you are practicing the exact Git and GitHub workflow (Fork, Clone, Commit, PR) required to be a successful GSoC contributor.
 
-Once your Pull Request is merged, our automated edge-routing instantly creates your portfolio at **`your-username.mygsoc.xyz`**.
+Once your Pull Request is merged, our automated edge-routing instantly creates your portfolio at **`yourname.mygsoc.xyz`**.
 
 ---
 
@@ -47,6 +47,7 @@ Getting your portfolio live takes less than 10 minutes. Follow these exact steps
 2. Clone your forked repository to your local machine:
 
         git clone https://github.com/Mygsoc/mygsoc.git
+
         cd mygsoc
 
 ### Step 2: Create Your Folder
@@ -60,12 +61,14 @@ Getting your portfolio live takes less than 10 minutes. Follow these exact steps
 
 ### Step 4: Commit & Push
 
-        git add public/your-username/
-        git commit -m "Add portfolio for [your-username]"
+        git add public/yourname/
+
+        git commit -m "Add portfolio for [yourname]"
+        
         git push origin main
 
 ### Step 5: Open a Pull Request
-Come back to this original repository and click **Compare & pull request**. Once our maintainers review and merge your code, your site will be live at `your-username.mygsoc.xyz` within seconds!
+Come back to this original repository and click **Compare & pull request**. Once our maintainers review and merge your code, your site will be live at `yourname.mygsoc.xyz` within seconds!
 
 ---
 
@@ -82,7 +85,7 @@ Want to test how your page looks with the wildcard subdomain routing before maki
         npm run dev
 
 3. Test your personal route in your browser!
-   👉 `http://your-username.localhost:3000`
+   👉 `http://yourname.localhost:3000`
 
 ---
 
@@ -90,7 +93,7 @@ Want to test how your page looks with the wildcard subdomain routing before maki
 
 To keep this platform safe and functional for everyone, please adhere to the following rules:
 
-1. **Only touch your folder:** Do not modify `proxy.ts`, `app/page.tsx`, or any files outside of `public/your-username/`. PRs modifying core architecture will be automatically rejected.
+1. **Only touch your folder:** Do not modify `proxy.ts`, `app/page.tsx`, or any files outside of `public/yourname/`. PRs modifying core architecture will be automatically rejected.
 2. **No malicious code:** All PRs are manually reviewed. Do not include external tracking scripts, crypto miners, or malicious payloads.
 3. **Keep it relevant:** This is a professional platform for open-source portfolios. Keep the content focused on your projects, tech stack, and GSoC goals.
 
